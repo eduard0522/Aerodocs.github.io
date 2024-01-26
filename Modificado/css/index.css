@@ -1,0 +1,425 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600&display=swap');
+
+:root{
+    --primary-color:#0B60B0;
+    --second-color:#FFFFFF;
+    --black:#000;
+    --tr-color:#DBA73A;
+    --shade:#03056b85;
+}
+*{
+    font-family: 'Baloo 2', sans-serif;
+}
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+
+}
+html{
+  padding: 2rem;
+  background-color: var(--second-color);
+}
+
+body{
+  display: flex;
+  background-color: var(--primary-color);
+  padding: 2rem;
+  border-radius: 1rem;
+}
+
+/**************************** HEADER *********************/
+
+header{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 15vw;
+  border-radius: 15px;
+  padding: .5rem;
+  color: var(--second-color);
+
+}
+
+header nav ul{
+  list-style: none;
+  color: var(--second-color);
+  margin-top: 2rem;
+  padding: 0; 
+}
+
+header nav ul li a{
+  font-size: 1.2rem;
+  text-decoration: none;
+  font-style: none;
+  font-weight: bold;
+  color: var(--second-color);
+  margin-left: .2rem;
+}
+header nav ul li:hover{
+  background-color: var(--shade);
+  transform: scale(1.1);
+  border-radius: .5rem;
+  padding: .2rem;
+}
+
+header img{
+  width: 160px;
+  margin: 0;
+  padding: 0;
+}
+
+
+/*********************** MAIN TOP HEADER ***************************/
+
+.general-container{
+  background-color: var(--second-color);
+  border-radius: 1rem;
+  padding: 1rem;
+}
+
+main .top-information{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+  
+}
+
+.date-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--primary-color);
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.profile-container{
+  display: flex;
+  align-items: center;
+}
+
+.profile-container img{
+  margin-right: .5rem;
+  width: 60px;
+}
+.profile-container span{
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+/********************* BANNER *******************/
+
+
+main .banner{
+  width: 100%;
+  padding: 1rem;
+}
+main .banner img{
+  width: 100%;
+}
+
+/**************** OPTIONS **********************/
+
+.options-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+
+.options-container .option{
+  display: flex;
+  align-items: center;
+  width: 45%;
+  background-color:var(--primary-color);
+  color: var(--second-color);
+  border-radius: .8rem;
+  padding: 2rem;
+}
+.options-container .option:hover{
+  background-color: #0b3050;
+  cursor: pointer;
+}
+.options-container .option span {
+  padding: 2rem 2rem 2rem 0;
+}
+.options-container .option span i{
+  display: block;
+  font-size: 4rem;;
+}
+.options-container .option h3{
+  font-weight: bold;
+}
+
+/*********************** PopUp ******************/
+
+.container-popUp{
+  width: 100vw;
+  height: 100vh;
+  background-color:#03051ac8 ;
+  position: fixed;
+  top: 0;
+  left:0;
+}
+.pop-up{
+  position: fixed;
+  top: calc(50% - 200px);
+  left:calc(50% - 200px);
+  z-index: 999;
+  margin: auto;
+  background-color: #ffffff;
+  width: 400px;
+  height: auto;
+  border-radius: .5rem;
+  padding: 2rem;
+ 
+}
+.pop-up h2{
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight:bolder;
+  margin: .2rem .2rem 0 .2rem;
+  padding: .5rem .5rem 0 .5rem;
+  
+}
+.pop-up h3{
+  color: var(--primary-color);
+  font-size: 1.1rem;
+  font-weight:bolder;
+  margin: 0;
+  padding: .5rem .5rem 0 .5rem;
+}
+.pop-up input{
+  width: 100%;
+}
+.container-btns{
+  display: flex;
+  justify-content: space-evenly;
+}
+.container-btns button:first-child{
+  color:#dd0606;
+  font-weight: bold;
+  padding: .3rem 3rem ;
+  font-size: 1rem;
+  border: 1px solid #dd0606;
+  margin-top: 1rem;
+  border-radius: .2rem;
+}
+.container-btns button:first-child:hover{
+background-color: #ea4d4d;
+color: var(--second-color);
+cursor: pointer;
+}
+.container-btns button:nth-child(2){
+  background-color: var(--primary-color);
+  color: var(--second-color);
+  font-weight: bold;
+  padding: .3rem 3rem ;
+  font-size: 1rem;
+  border: 1px solid var(--primary-color);
+  margin-top: 1rem;
+  border-radius: .2rem;
+}
+.container-btns button:last-child:hover{
+  background-color:#044074;
+  cursor: pointer;
+  }
+
+.hidden{
+  transition:ease-in-out 1s;
+  display: none;
+  visibility: hidden;
+}
+#pop-up{
+  z-index: 1000;
+}
+
+/********************* FOOTER ******************/
+
+footer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-color);
+  padding: 1rem;
+  border-radius: 1rem;
+  margin-top: 3rem;
+  color: var(--second-color);
+}
+
+.logos-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logos-container img{
+  width: 100px;
+  height:100px;
+ margin-right: .5rem;
+}
+.logos-container p{
+  padding: 0 .8rem;
+  margin-top: 0;
+}
+.logos-container h3{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom:0;
+}
+
+
+footer .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+footer .info ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  font-size: .9rem;
+}
+footer .info ul li a{
+  text-decoration: underline;
+  font-size: none;
+  color: var(--second-color);
+}
+footer .info h3{
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin: .2rem;
+}
+
+
+/*************************** MEDIA SCREEN ****************/
+@media(max-width:1200px){
+  html,body,header,.general-form-container{
+    padding: 1rem;
+  }
+  header,.general-container{
+    width: auto;
+  }
+  .box{
+    width: 90%;
+  }
+}
+@media (max-width:900px) {
+  html,body,header,.general-container{
+    padding: 1rem;
+  }
+   /*************** HEADER ***********/
+  header{
+    padding: 1rem 1rem 1rem 0;
+  }
+  header,.general-container{
+    width: auto;
+  }
+  header img{
+    width: 130px;
+  }
+  header h2{
+    font-size: 1.2rem;
+  }
+  header a{
+    font-size: 1.1rem;
+  }
+   /********** MAIN TOP **********/
+
+  .top-information .date-container{
+    display: none;
+    visibility: hidden;
+  }
+  .options-container{
+    flex-direction: column;
+    padding: .5rem;
+  }
+  
+  .options-container .option{
+    width: 100%;
+    margin-bottom: 2rem;
+    border-radius: 1.5rem;
+    padding: .5rem;
+  }
+  /****** Footer *****/
+  footer div:nth-child(3){
+    display: none;
+    visibility: none;
+  }
+ .logos-container h3,.info h3,f{
+  font-size:1rem;
+  margin: 0;
+  padding: .2rem;
+ }
+ .logos-container p{
+  margin: 0 0 .5rem 0;
+  padding: .2rem;
+  font-size: .8rem;
+ } 
+ footer .info ul li{
+  margin: 0;
+  padding: .2rem;
+  font-size: .8rem;
+ }
+}
+
+@media (max-width:600px) {
+  .hidden-responsive{
+    display: none;
+    visibility: none;
+  }
+  html, body, header,.general-container{
+    padding: .5rem;
+  }
+  body{
+    flex-direction: column;
+  }
+  /*************** HEADER ***********/
+  header img{
+    width: 100px;
+  }
+  header h2{
+    font-size: 1.5rem;
+  }
+  header a{
+    font-size: 1rem;
+  }
+  header nav ul{
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    margin: .5rem;
+    font-size: 1.5rem;
+  }
+  /********** MAIN TOP **********/
+  .top-information h2{
+    display: block;
+    
+  }
+  .top-information h2{
+    display: block;
+    visibility:visible;
+  }
+/**************** OPTIONS **********************/
+
+.options-container .option img{
+  padding: .5rem;
+}
+  
+ 
+  /****** Footer *****/
+  .logos-container img{
+    margin: 0;
+    padding: 0;
+    width: 80px;
+  }
+  footer{
+    flex-direction: column;
+  }
+}
+
+
+
+

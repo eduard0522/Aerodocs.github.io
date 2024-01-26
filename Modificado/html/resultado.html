@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+    <link rel="stylesheet" href="../css/resultado.css">
+    <script src="https://kit.fontawesome.com/db59255a97.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!---------------------------------- HEADER -------------------------------->
+
+
+<header>
+        <div>
+            <h2>Aeronáutica civil</h2>
+            <nav>
+                <ul>
+                    <li class="active"><i class="fa-solid fa-house"></i><a href="/Modificado/index.html"
+                            class="hidden-responsive">Home</a></li>
+                    <li><i class="fa-solid fa-magnifying-glass"></i><a href="../html/resultado.html"
+                            class="hidden-responsive">Buscador</a></li>
+                    <li><i class="fa-solid fa-database"></i><a href="../html/base.html" class="hidden-responsive">Base
+                            de datos</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <img src="../assets/img/potenciavida.svg" alt="Logo colombia potencia de vida" class="hidden-responsive">
+
+    </header>
+
+    <!-------------------------------   MAIN TOP HEADER -------------------------------------->
+
+
+    <section class="general-container">
+        <main>
+            <article class="top-information">
+                <h2>Resultado</h2>
+
+                <div class="date-container hidden-responsive">
+                    <span >22 ene, 2023</span>
+                    <span  >9:22 Am.</span>
+                </div>
+
+                <div class="profile-container ">
+                    <img src="../assets/img/Logo-azul.svg" alt="Logo Aeronautica civil">
+                    <span class="hidden-responsive">Administrador</span>
+                </div>
+            </article>
+
+            <!-----------------------------------     MAIN INFORMATION ------------------------------>
+
+            <div class="navegador">
+                <span>Home</span> > <span id="buscador">Buscador</span>
+            </div>
+
+            <h3 class="detalles">Detalles:</h3>
+
+            <div class="resultado">
+                <div class="detalles box">
+                    <h3>Expendiente encontrado</h3>
+                    <p>Pasillo: <span>24</span></p>
+                    <p>Cuerpo: <span>Q</span></p>
+                    <p>RAC: <span>5</span></p>
+                    <p>Entrepaño: <span>4</span></p>
+                    <p>Oficina: <span>DIRECCION ESTANDARES DE VUELO</span></p>
+                    <p>Nombre Serie: <span>CERTIFICADOS</span></p>
+                    <p>Nombre subserie: <span>CERTIFICADOS MEDICOS AERONAUTICOS</span></p>
+                    <div class="buttons-detalles">
+                        <button type="button">Volver</button>
+                        <button type="button" class="appli">Solicitar Expediente</button>
+                    </div>
+                </div>
+            </div>
+
+            <section class="general-form-container hidden" id="form-appli">
+                <section class="form-container">
+                    <div class="img-form-container hidden-responsive">
+                        <h2>Generar solicitud de expediente</h2>
+                        <p>Recuerda diligenciar todos los datos!!</p>
+                        <img src="../assets/Logos/Logo SGDEA Azul.png" alt="">
+                    </div>
+    
+                    <div class="form">
+                        <form action="">
+                            <h2> Ingresa los siguientes datos </h2>
+                            <div class="input-container">
+                                <input type="text" placeholder=" #️⃣ Numero de referencia" disabled>
+                                <input type="text" placeholder=" 👤 Nombre del solicitante">
+                            </div>
+    
+                            <div class="input-container">
+                                <input type="text" placeholder=" 📧 Correo del solicitante">
+                                <input type="text" placeholder=" 📝 Observaciones">
+                            </div>
+                            <label class="input100"> Dependencia
+                                <select name="oficinas" id="oficinas">
+                                    <option value="estandares de vuelo"> Dirección de estandares de vuelo</option>
+                                    <option value="estandares de vuelo"> Dirección de estandares de vuelo</option>
+                                    <option value="estandares de vuelo"> Dirección de estandares de vuelo</option>
+                                    <option value="estandares de vuelo"> Dirección de estandares de vuelo</option>
+                                </select>
+                            </label>
+    
+                            <div class="input-container">
+                                <button type="button" class ="button-cancel-appli">Cancelar ❌</button>
+                                <button type="button" class="register-appli"> Registrar</button>
+                              </div>
+                        </form>
+                    </div>
+                </section>
+            </section>
+        </main>
+        
+       
+
+        <!---------------------------------    FOOTER ------------------------------------------->
+
+        <footer>
+            <div class="logos-container">
+              <img src="../assets/Logos/SGDEA.svg" alt="Logo Colombia">
+              <div class="informacion">
+                <h3>Grupo gestión documental</h3>
+                <p>Hecho por Grupo análisisis y desarrollo de software</p>
+                <p>Correo.com</p>
+              </div>
+            </div>
+      
+            <div class="info">
+              <h3>Informacion</h3>
+              <ul>
+                <li>Av. Eldorado 103-15</li>
+                <li>Edificio central Aerocivil</li>
+                <li>Bogotá D.C. Colombia</li>
+              </ul>
+            </div>
+      
+            <div class="info">
+              <h3 >Atención al ciudadano</h3>
+              <ul>
+                <li>Telefono: 6012963336</li>
+                <li><a href="mailto:archivogeneral@aerocivil.gov.co">archivogeneral@aerocivil.gov.co</a></li>
+                <li>HORARIO DE ATENCIÓN: Lunes a viernes 8:00am a 4:30pm</li>
+              </ul>
+            </div>
+      
+          </footer>
+    </section>
+
+    <script src="../code/index.mjs" type="module"></script>
+</body>
+
+</html>

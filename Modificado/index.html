@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Index</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="https://kit.fontawesome.com/db59255a97.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!--------------------------------  HEADER --------------------------------->
+
+  <header>
+    <div>
+        <h2>Aeronáutica civil</h2>
+        <nav>
+            <ul>
+                <li class="active"><i class="fa-solid fa-house"></i><a href="../index.html"
+                        class="hidden-responsive">Home</a></li>
+                <li><i class="fa-solid fa-magnifying-glass"></i><a href="../Modificado/html/resultado.html"
+                        class="hidden-responsive">Buscador</a></li>
+                <li><i class="fa-solid fa-database"></i><a href="../Modificado/html/base.html" class="hidden-responsive">Base
+                        de datos</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <img src="..//Modificado/assets/img/potenciavida.svg" alt="Logo colombia potencia de vida" class="hidden-responsive">
+
+</header>
+
+<!-------------------------------   MAIN TOP HEADER -------------------------------------->
+
+
+<section class="general-container">
+    <main>
+        <article class="top-information">
+            <h2>Dashboard</h2>
+
+            <div class="date-container hidden-responsive">
+                <span >22 ene, 2023</span>
+                <span  >9:22 Am.</span>
+            </div>
+
+            <div class="profile-container ">
+                <img src="../Modificado/assets/img/Logo-azul.svg" alt="Logo Aeronautica civil">
+                <span class="hidden-responsive">Administrador</span>
+            </div>
+        </article>
+
+      <!-----------------------    BANNER ------------------------------------->
+
+
+      <article class="banner">
+        <img src="../Modificado/assets/img/banner.jpg" alt="Banner aeronautica civil">
+      </article>
+
+
+       <!------------------------------  OPTIONS -------------------------------->
+
+      <h2>Opciones</h2>
+
+      <section class="options-container">
+        <article class="option option-search">
+
+          <span><i class="fa-solid fa-magnifying-glass"></i></span>
+          <div>
+            <h3>Buscar un archivo:</h3>
+            <p>Aquí podrás buscar la ubicación topográfica de cualquier archivo que este en la base de datos con tan
+              solo ingresar la referencia.</p>
+          </div>
+        </article>
+
+        <article class="option option-base">
+          <span><i class="fa-solid fa-database"></i></span>
+          <div>
+            <h3>Gestionar base de datos</h3>
+            <p>Aquí podrás gestionar los archivos existentes o registrar uno nuevo para la base de datos.</p>
+          </div>
+        </article>
+      </section>
+
+      <div class="container-popUp hidden" id="popUp">
+        <section class="pop-up">
+            <form action="">
+                <h2>¿Que vamos a buscar?</h2>
+                <h3>Cod.Serie</h3>
+                <input type="text" placeholder="Ej: 008">
+                <h3>Cod.Subserie</h3>
+                <input type="text" placeholder="Ej: 008">
+                <div class="container-btns">
+                    <button class="closed-popUp" type="button">Cancelar</button>
+                    <button type="button" class="search-base">Buscar</button>
+                </div>
+            </form>
+        </section>
+    </div>
+    </main>
+
+    <!-----------------------------  FOOTER ----------------------------------->
+
+    <footer>
+      <div class="logos-container">
+        <img src="../Modificado/assets/Logos/SGDEA.svg" alt="Logo Colombia">
+        <div class="informacion">
+          <h3>Grupo gestión documental</h3>
+          <p>Hecho por Grupo análisisis y desarrollo de software</p>
+          <p>Correo.com</p>
+        </div>
+      </div>
+
+      <div class="info">
+        <h3>Informacion</h3>
+        <ul>
+          <li>Av. Eldorado 103-15</li>
+          <li>Edificio central Aerocivil</li>
+          <li>Bogotá D.C. Colombia</li>
+        </ul>
+      </div>
+
+      <div class="info">
+        <h3 >Atención al ciudadano</h3>
+        <ul>
+          <li>Telefono: 6012963336</li>
+          <li><a href="mailto:archivogeneral@aerocivil.gov.co">archivogeneral@aerocivil.gov.co</a></li>
+          <li>HORARIO DE ATENCIÓN: Lunes a viernes 8:00am a 4:30pm</li>
+        </ul>
+      </div>
+
+    </footer>
+  </section>
+
+  <script src="../Modificado/code/index.mjs" type="module"></script>
+</body>
+
+</html>
+
+
