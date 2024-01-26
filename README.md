@@ -1,4 +1,4 @@
 ## Proyecto Aeronáutica civil
 
 - Primer commit subido.
-- Diseño FrontEnd Terminado.
+- Diseño FrontEnd Primera entrega, aún faltan ciertas modificaciones.
