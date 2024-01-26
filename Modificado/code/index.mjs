@@ -28,6 +28,15 @@ d.addEventListener("click", (e) => {
   if(e.target.matches(".search-base")){
     cdRutes("../Modificado/html/resultado.html");
   }
+  if(e.target.matches(".fa-solid fa-house")){
+    cdRutes("../Modificado/index.html");
+  }
+  if(e.target.matches(".fa-solid fa-magnifying-glass")){
+    cdRutes("../Modificado/html/resultado.html");
+  }
+  if(e.target.matches(".fa-solid fa-database")){
+    cdRutes("../Modificado/html/base.html");
+  }
   if(e.target.matches(".resgister-form")){
    alert("Registro exitoso");
    ClosedModal("form","hidden-form");
@@ -52,7 +61,6 @@ d.addEventListener("click", (e) => {
   if(e.target.matches(".register-appli")){
     alert("Registro exitoso");
     ClosedModal("form-appli","hidden");
-
   }
 
 })

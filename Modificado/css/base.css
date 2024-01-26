@@ -289,6 +289,7 @@ table thead th:first-child{
   font-weight: bold;
   font-size: 1.5rem;  
  }
+
 /************************** FORM *********************************/
 .form{
   background-color:var(--primary-color);
@@ -388,7 +389,9 @@ form button:last-child:hover{
 }
 .form-container{
  flex-direction: column;
-  width:100%;
+  width:90%;
+  top: 20vh;
+  left: 5%;
 }
 /************************** FORM *********************************/
 .form{
