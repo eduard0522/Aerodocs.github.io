@@ -28,14 +28,14 @@ d.addEventListener("click", (e) => {
   if(e.target.matches(".search-base")){
     cdRutes("../Modificado/html/resultado.html");
   }
-  if(e.target.matches(".fa-solid fa-house")){
-    cdRutes("../Modificado/index.html");
+  if(e.target.matches(".fa-house")){
+    cdRutes("../index.html");
   }
-  if(e.target.matches(".fa-solid fa-magnifying-glass")){
-    cdRutes("../Modificado/html/resultado.html");
+  if(e.target.matches(".fa-magnifying-glass")){
+    cdRutes("./resultado.html");
   }
-  if(e.target.matches(".fa-solid fa-database")){
-    cdRutes("../Modificado/html/base.html");
+  if(e.target.matches(".fa-database")){
+    cdRutes("./base.html");
   }
   if(e.target.matches(".resgister-form")){
    alert("Registro exitoso");

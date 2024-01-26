@@ -509,6 +509,13 @@ footer .info h3{
     visibility: none;
     display: none;
   }
+  .register button{
+    padding: .1rem 1rem;
+  }
+  .BD  input{
+    display: inline-block;
+    width: 60%;
+  }
    /********************* BANNER *******************/
    main h2{
     padding: .2rem;
